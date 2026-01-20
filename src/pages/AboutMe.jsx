@@ -112,7 +112,7 @@ function PersonalLife () {
     
     return (
         <div className="flex flex-col items-center gap-5 p-20">
-            <h1 className="text-5xl font-bold">Who Am I?</h1>
+            <h1 className="text-5xl font-black text-slate-500">My Interests</h1>
             <div className=" w-full h-full grid grid-cols-2 grid-rows-2 gap-5">
                 <div className="bg-slate-100 rounded p-5 text-slate-900">
                     <div className="text-center text-slate-500">

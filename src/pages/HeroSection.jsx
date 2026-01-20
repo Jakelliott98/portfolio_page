@@ -3,7 +3,7 @@ export default function HeroSection () {
 
     return (
         <div className=" h-screen max-h-screen bg-slate-900 text-slate-300 overflow-hidden">
-            <nav className="h-1/12 bg-slate-900 px-10 flex justify-around items-center text-slate-600 font-bold">
+            <nav className="h-1/12 w-full bg-slate-900 px-10 flex justify-around items-center text-slate-600 font-bold absolute">
                 <a className='hover:text-slate-200 cursor-pointer'>HOME</a>
                 <a className='hover:text-slate-200 cursor-pointer'>ABOUT</a>
                 <a className='hover:text-slate-200 cursor-pointer'>WORK</a>

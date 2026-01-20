@@ -56,7 +56,7 @@ export default function Projects () {
                             <li className="py-1 px-2 bg-slate-900 rounded text-sm text-slate-500">JavaScript</li>
                             <li className="py-1 px-2 bg-slate-900 rounded text-sm text-slate-500">JavaScript</li>
                             <li className="py-1 px-2 bg-slate-900 rounded text-sm text-slate-500">JavaScript</li>
-                            <li className="py-1 px-2 bg-slate-900 rounded text-sm text-slate-500">JavaScript</li>
+                            <li className="py-1 px-2 bg-slate-900 rounded text-sm text-slate-500">Test</li>
                             
                         </ul>
                     </div>
