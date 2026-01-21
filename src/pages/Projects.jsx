@@ -4,12 +4,12 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 export default function Projects () {
 
     return (
-        <div className="min-h-screen bg-slate-900 text-slate-200">
-            <h1 className="text-6xl text-center mb-10 font-black text-slate-500">Projects</h1>
-            <div className="gap-10 flex  flex-col justify-around px-25">
-                <div className="bg-slate-800 py-5 px-10 rounded-xl flex">
-                    <div className="flex-1">
-                        <img src="#"/>
+        <div className="min-h-screen bg-slate-900 text-slate-200 flex flex-col items-center p-10">
+            <h1 className="text-6xl text-center mb-5 font-black text-slate-500">Projects</h1>
+            <div className="flex-1 flex flex-col justify-between px-25">
+                <div className="bg-slate-800 p-5 rounded-xl flex gap-4">
+                    <div className="flex-1 bg-slate-600 rounded">
+                            <img src="#"/>
                     </div>
                     <div className="flex-4">
                         <h1 className="text-xl font-bold">Compliance Tracker <FontAwesomeIcon className="text-md" icon={faArrowRight} /></h1>
@@ -26,8 +26,8 @@ export default function Projects () {
                         </ul>
                     </div>
                 </div>
-                <div className="bg-slate-800 py-5 px-10 rounded-xl flex">
-                    <div className="flex-1">
+                <div className="bg-slate-800 p-5 rounded-xl flex gap-4">
+                    <div className="flex-1 bg-slate-600 rounded">
                         <img src="#"/>
                     </div>
                     <div className="flex-4">
@@ -44,8 +44,8 @@ export default function Projects () {
                         </ul>
                     </div>
                 </div>
-                <div className="bg-slate-800 py-5 px-10 rounded-xl flex">
-                    <div className="flex-1">
+                <div className="bg-slate-800 p-5 rounded-xl flex gap-4">
+                    <div className="flex-1 bg-slate-600 rounded">
                         <img src="#"/>
                     </div>
                     <div className="flex-4">

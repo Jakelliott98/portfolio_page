@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
-import AboutMe from './pages/AboutMe'
+import AboutMe from './pages/about-me/AboutMe'
 import ContactPage from './pages/ContactPage'
 import HeroSection from './pages/HeroSection'
 import Projects from './pages/Projects'
@@ -61,7 +61,7 @@ function App() {
 
   return (
     <div className=''>
-      <HeroSection />
+      <HeroSection setCurrentSection={setCurrentSection}/>
       <AboutMe />
       <Projects />
       <ContactPage />
