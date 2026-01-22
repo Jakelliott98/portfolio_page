@@ -71,13 +71,36 @@ function GeneralInfo () {
             </div>
             <div className="flex-1 flex flex-col justify-center items-center gap-2">
                 <div className="relative">
-                    {/* ADD IN STACK BUBBLES */}
-                    <div className="bg-white flex flex-col items-center p-20 rounded-xl z-10">
-                        <img src={heroImage} className="w-36 h-36 bg-slate-100 rounded-full"/>
-                        <p className="rounded-xl bg-slate-100 text-black py-1 px-2 text-sm w-fit">Frontend Developer</p>
+                    <div className="bg-white/95 shadow-sm  flex flex-col items-center p-14 rounded-xl z-10 md:p-16">
+                        <img src={heroImage} className="w-36 h-36 bg-slate-100 rounded-full ring-2 ring-white shadow-sm"/>
+                        <p className="rounded-xl bg-slate-100 text-slate-800 py-1 px-2 text-sm w-fit font-medium ring-2 ring-white shadow-sm tracking-wide">Frontend Developer</p>
+                        <div className="absolute bg-slate-200/80 text-slate-600 text-xs py-1 px-2 rounded-full flex gap-2 items-center top-[15%] right-[5%] -translate-y-1/2">
+                            <i class="devicon-javascript-plain"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div className="absolute bg-slate-200/80 text-slate-600 text-xs py-1 px-2 rounded-full flex gap-2 items-center top-[15%] left-[5%] -translate-y-1/2">
+                            <i class="devicon-typescript-plain"></i>
+                            <p>TypeScript</p>
+                        </div>
+                        <div className="absolute bg-slate-200/80 text-slate-600 text-xs py-1 px-2 rounded-full flex gap-2 items-center top-[50%] left-[15%] -translate-y-1/2 -translate-x-full">
+                            <i class="devicon-react-original"></i>
+                            <p>React</p>
+                        </div>
+                        <div className="absolute bg-slate-200/80 text-slate-600 text-xs py-1 px-2 rounded-full flex gap-2 items-center top-[50%] right-[15%] -translate-y-1/2 translate-x-full">
+                            <i class="devicon-html5-plain"></i>
+                            <p>HTML</p>
+                        </div>
+                        <div className="absolute bg-slate-200/80 text-slate-600 text-xs py-1 px-2 rounded-full flex gap-2 items-center bottom-[2%] left-[5%] -translate-y-1/2">
+                            <i class="devicon-tailwindcss-original"></i>
+                            <p>Tailwind CSS</p>
+                        </div>
+                        <div className="absolute bg-slate-200/80 text-slate-600 text-xs py-1 px-2 rounded-full flex gap-2 items-center bottom-[2%] right-[5%] -translate-y-1/2">
+                            <i class="devicon-css3-plain"></i>
+                            <p>CSS</p>
+                        </div>
                     </div>
                 </div>
-                <button className="rounded-xl border border-slate-100 py-2 px-4 cursor-pointer hover:bg-white hover:text-slate-900">Download CV</button>
+                <button className="rounded-xl py-2 px-4 cursor-pointer bg-white/90 text-slate-800 shadow-sm tracking-wide ring-2 ring-white text-sm hover:bg-white hover:text-slate-900">Download CV</button>
             </div>
         </div>
     )
