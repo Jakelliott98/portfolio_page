@@ -82,8 +82,8 @@ function InterestCard ({ source, title, text}) {
         <div className="min-w-64 h-[26rem] bg-slate-500 rounded-xl overflow-hidden flex flex-col ">
             <img src={source} className=" w-full h-72 object-cover"/>
             <div className=" p-2 overflow-hidden">
-                <p className="text-slate-900 font-bold">{title}</p>
-                <p className="text-slate-300 text-xs leading-relaxed">{text}</p>
+                <p className="text-slate-200 font-bold">{title}</p>
+                <p className="text-slate-300/80 text-xs leading-relaxed">{text}</p>
             </div>
         </div>
     )

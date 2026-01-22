@@ -12,8 +12,8 @@ export default function ContactPage () {
                 <div className="p-5 flex flex-col justify-center">
                     <h1 className="text-slate-600 text-9xl font-black hover:text-slate-400 cursor-pointer">Let's Talk</h1>
                     <p className="mt-3 text-slate-400 w-2/3">I am looking for a career transition into tech and open to discussing with any potential helpers or recruiters - Additionally I am open to any tech opportunities where I can further learn and develop skills</p>
-                    <p className="text-slate-600 text-sm mt-5 hover:text-slate-200">07393938301</p>
-                    <p className="text-slate-600 text-sm hover:text-slate-200">John98elliott@gmail.com</p>
+                    <p className="text-slate-600 text-sm mt-5 hover:text-slate-200 w-fit">07393938301</p>
+                    <p className="text-slate-600 text-sm hover:text-slate-200 w-fit">John98elliott@gmail.com</p>
                 </div>
                 <div className="p-5 flex flex-col justify-center gap-5">
                     <div className="flex gap-5 [&>*]:flex-1">
@@ -28,9 +28,9 @@ export default function ContactPage () {
                     </div>
                     <div className="flex flex-col gap-2 w-full">
                         <label className="font-bold text-xl text-slate-500">Message</label>
-                        <textarea className="border border-slate-500"/>
+                        <textarea className="border border-slate-500 rounded p-2"/>
                     </div>
-                    <button className="border border-slate-500 w-full py-3 text-slate-400 font-bold cursor-pointer hover:bg-slate-500 hover:text-slate-900">Send  <FontAwesomeIcon icon={faPaperPlane} className="rotate-45"/></button>
+                    <button className="border border-slate-500 rounded w-full py-3 text-slate-400 font-bold cursor-pointer hover:bg-slate-500 hover:text-slate-900">Send  <FontAwesomeIcon icon={faPaperPlane} className="rotate-45"/></button>
                 </div>
             </div>
             <div className="w-full flex items-center justify-center">
