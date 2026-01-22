@@ -61,10 +61,10 @@ function PersonalLife () {
     
     return (
         <div className="">
-            <h1 className="text-5xl font-black text-slate-500 pb-5">
+            <h1 className="text-5xl font-black text-slate-500 pb-20 tracking-wide text-center">
                 <span className="opacity-60">🌱</span> Outside of Work
             </h1>
-            <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory">
+            <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory pb-20">
                 {
                     personalInterests.map((item) => {
                         return (
@@ -79,11 +79,11 @@ function PersonalLife () {
 
 function InterestCard ({ source, title, text}) {
     return (
-        <div className="min-w-64 h-96 bg-slate-500 rounded-xl overflow-hidden flex flex-col ">
+        <div className="min-w-64 h-[26rem] bg-slate-500 rounded-xl overflow-hidden flex flex-col ">
             <img src={source} className=" w-full h-72 object-cover"/>
             <div className=" p-2 overflow-hidden">
                 <p className="text-slate-900 font-bold">{title}</p>
-                <p className="text-slate-300 text-xs">{text}</p>
+                <p className="text-slate-300 text-xs leading-relaxed">{text}</p>
             </div>
         </div>
     )
