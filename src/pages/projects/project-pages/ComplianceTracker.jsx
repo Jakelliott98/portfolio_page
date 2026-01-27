@@ -1,5 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faStarOfLife } from "@fortawesome/free-solid-svg-icons"
+import { faStarOfLife, faArrowLeftLong, faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
+import { useNavigate } from "react-router"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+
 
 const keyFeatures = [
                 {title: 'Integrated Database & Live UI Updates', text: 'Client feedback is stored in a central Supabase database and reflected instantly in the analytics portal, ensuring the UI always displays up-to-date responses without manual intervention.'}, 
@@ -13,8 +16,14 @@ const keyFeatures = [
 
 function ComplianceTracker () {
 
+    const navigate = useNavigate()
+
     return (
-    <div className="min-h-screen flex flex-col gap-5 text-white">
+    <div className="min-h-screen px-40 py-15 bg-slate-900 flex flex-col gap-5 text-white">
+        <p onClick={() => navigate('/')} className="absolute text-cyan-800 flex gap-2 items-center cursor-pointer hover:translate-x-[-5px]">
+            <FontAwesomeIcon icon={faArrowLeftLong} className=""/>
+            Back
+        </p>
         <div>
             <h1 className="text-center text-5xl font-black">Compliance Tracker</h1>
             <div className="flex gap-2 items-center justify-center">
@@ -48,8 +57,8 @@ function ComplianceTracker () {
         </div>
         <div className="flex justify-center">
             <div className="flex [&>*]:flex-1 gap-10 px-10 w-2/3">
-                <button className="py-4 px-4 bg-slate-200 rounded-lg text-slate-800 font-semibold cursor-pointer">GitHub Repo</button>
-                <button className="py-4 px-4 bg-slate-200 rounded-lg text-slate-800 font-semibold cursor-pointer">Live Site</button>
+                <button className="py-4 px-4 rounded-lg border-2 border-cyan-800 text-cyan-800 cursor-pointer font-black tracking-wide hover:bg-cyan-800 hover:text-slate-900"><FontAwesomeIcon icon={faGithub} /> GitHub Repo</button>
+                <button className="py-4 px-4 rounded-lg border-2 border-cyan-800 text-cyan-800 cursor-pointer font-black tracking-wide hover:bg-cyan-800 hover:text-slate-900"><FontAwesomeIcon icon={faUpRightFromSquare} /> Live Site</button>
             </div>
         </div>
     </div>

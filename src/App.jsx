@@ -3,7 +3,6 @@ import Homepage from './pages/Home'
 import CalorieCalculator from './pages/projects/project-pages/CalorieCalculator'
 import ComplianceTracker from './pages/projects/project-pages/ComplianceTracker'
 import FeedbackForm from './pages/projects/project-pages/FeedbackForm'
-import ProjectOutlet from './pages/projects/project-pages/ProjectOutlet'
 import { Routes, Route } from 'react-router'
 
 function App() {

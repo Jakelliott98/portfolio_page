@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 import projectList from "./projectList"
-import { faStarOfLife } from "@fortawesome/free-solid-svg-icons"
 import { useNavigate } from "react-router"
 
 export default function Projects () {
@@ -26,12 +25,12 @@ function ProjectCard ({ project }) {
     const navigate= useNavigate()
 
     return (
-        <div onClick={() => navigate(project.route)} className="group flex-1 bg-slate-800 p-5 rounded-xl flex gap-4 border border-transparent hover:border-cyan-400/40 hover:bg-slate-800/80 cursor-pointer transition-all duration-200">
+        <div onClick={() => navigate(project.route)} className="group flex-1 bg-slate-800 p-5 rounded-xl flex gap-4 border border-transparent hover:border-cyan-800 hover:bg-slate-800/80 cursor-pointer transition-all duration-200">
                     <div className='flex-1 bg-slate-600 rounded'>
                         <img src="#"/>
                     </div>
                     <div className="flex-4 flex flex-col items-start">
-                        <h1 className="text-xl font-bold group-hover:text-cyan-400/40"> {project.title} <FontAwesomeIcon className="text-md group-hover:rotate-[-45deg] transition-all duration-200" icon={faArrowRight} /></h1>
+                        <h1 className="text-xl font-bold group-hover:text-cyan-800 flex items-center gap-3"> {project.title} <FontAwesomeIcon className="text-md text-transparent group-hover:text-cyan-800 transition-all duration-200" icon={faUpRightFromSquare} /></h1>
                         <p className="text-slate-400 pt-1 text-start flex-1">{project.description}</p>
                         <ul className="flex gap-2 pt-2">
                             {
