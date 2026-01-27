@@ -2,6 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faStarOfLife, faArrowLeftLong, faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 import { useNavigate } from "react-router"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import screenshot1 from '../../../assets/project-screenshots/compliance-tracker/screenshot1.png'
+import screenshot2 from '../../../assets/project-screenshots/compliance-tracker/screenshot2.png'
+import screenshot3 from '../../../assets/project-screenshots/compliance-tracker/screenshot3.png'
+import screenshot4 from '../../../assets/project-screenshots/compliance-tracker/screenshot4.png'
 
 
 const keyFeatures = [
@@ -50,10 +54,16 @@ function ComplianceTracker () {
                 ))}
             </div>
         </div>
-        <div className="flex flex-col items-center gap-5">
-                <div className="h-80 bg-sky-100 w-2/3"></div>
-                <div className="h-80 bg-sky-100 w-2/3"></div>
-                <div className="h-80 bg-sky-100 w-2/3"></div>
+        <div className="grid grid-cols-2 gap-8 w-full">
+            {
+                [screenshot1, screenshot2, screenshot3, screenshot4].map((image, i) => {
+                    return (
+                        <div key={i} className="rounded-lg overflow-hidden shadow-lg">
+                            <img src={image} alt='Screenshot from compliance website' className=""/>
+                        </div>
+                    )
+                })
+            }
         </div>
         <div className="flex justify-center">
             <div className="flex [&>*]:flex-1 gap-10 px-10 w-2/3">
