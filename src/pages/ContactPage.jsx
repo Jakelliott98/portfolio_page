@@ -1,7 +1,6 @@
-import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 
 export default function ContactPage () {
 
@@ -12,32 +11,31 @@ export default function ContactPage () {
                 <div className="p-5 flex flex-col justify-center">
                     <h1 className="text-slate-600 text-9xl font-black hover:text-slate-400 cursor-pointer">Let's Talk</h1>
                     <p className="mt-3 text-slate-400 w-2/3">I am looking for a career transition into tech and open to discussing with any potential helpers or recruiters - Additionally I am open to any tech opportunities where I can further learn and develop skills</p>
-                    <p className="text-slate-600 text-sm mt-5 hover:text-slate-200 w-fit">07393938301</p>
-                    <p className="text-slate-600 text-sm hover:text-slate-200 w-fit">John98elliott@gmail.com</p>
+                    <p className="text-cyan-800 mt-5 hover:text-cyan-700 w-fit">07393938301</p>
+                    <p className="text-cyan-800 hover:text-cyan-700 w-fit">John98elliott@gmail.com</p>
                 </div>
-                <div className="p-5 flex flex-col justify-center gap-5">
+                <form action="https://formsubmit.co/86f92f776417bde93b5694851f5131cf" method="POST" className="p-5 flex flex-col justify-center gap-5">
                     <div className="flex gap-5 [&>*]:flex-1">
                         <div className="flex flex-col gap-2">
                             <label className="font-bold text-xl text-slate-500">Name</label>
-                            <input className="p-2 border-b border-slate-500"/>
+                            <input type="text" name='name' required className="p-2 border-b border-slate-500 outline-none focus:outline-none"/>
                         </div>
                         <div className="flex flex-col gap-2">
                             <label className="font-bold text-xl text-slate-500">Email</label>
-                            <input className="p-2 border-b border-slate-500"/>
+                            <input type="email" name='email' required className="p-2 border-b border-slate-500 outline-none focus:outline-none"/>
                         </div>
                     </div>
                     <div className="flex flex-col gap-2 w-full">
                         <label className="font-bold text-xl text-slate-500">Message</label>
-                        <textarea className="border border-slate-500 rounded p-2"/>
+                        <textarea type="text" name='content' required className="border border-slate-500 rounded p-2 outline-none focus:outline-none"/>
                     </div>
-                    <button className="border border-slate-500 rounded w-full py-3 text-slate-400 font-bold cursor-pointer hover:bg-slate-500 hover:text-slate-900">Send  <FontAwesomeIcon icon={faPaperPlane} className="rotate-45"/></button>
-                </div>
+                    <button type="submit" className="border border-slate-500 rounded w-full py-3 text-slate-400 font-bold cursor-pointer hover:bg-slate-500 hover:text-slate-900">Send  <FontAwesomeIcon icon={faPaperPlane} className="rotate-45"/></button>
+                </form>
             </div>
             <div className="w-full flex items-center justify-center">
-                <div className="flex w-1/6 justify-between items-center text-3xl text-slate-500">
-                    <a href="https://www.linkedin.com/in/john-elliott1998/"><FontAwesomeIcon icon={faLinkedin} className="cursor-pointer hover:text-slate-200"/></a>
-                    <a href=""><FontAwesomeIcon icon={faTwitter} className="cursor-pointer hover:text-slate-200"/></a>
-                    <a href="https://github.com/Jakelliott98"><FontAwesomeIcon icon={faGithub} className="cursor-pointer hover:text-slate-200"/></a>
+                <div className="flex w-1/6 justify-center gap-5 items-center text-3xl text-slate-500">
+                    <a href="https://www.linkedin.com/in/john-elliott1998/"><FontAwesomeIcon icon={faLinkedin} className="cursor-pointer hover:text-cyan-700"/></a>
+                    <a href="https://github.com/Jakelliott98"><FontAwesomeIcon icon={faGithub} className="cursor-pointer hover:text-cyan-700"/></a>
                 </div>
             </div>
         </div>
