@@ -67,8 +67,8 @@ function ComplianceTracker () {
         </div>
         <div className="flex justify-center">
             <div className="flex [&>*]:flex-1 gap-10 px-10 w-2/3">
-                <button className="py-4 px-4 rounded-lg border-2 border-cyan-800 text-cyan-800 cursor-pointer font-black tracking-wide hover:bg-cyan-800 hover:text-slate-900"><FontAwesomeIcon icon={faGithub} /> GitHub Repo</button>
-                <button className="py-4 px-4 rounded-lg border-2 border-cyan-800 text-cyan-800 cursor-pointer font-black tracking-wide hover:bg-cyan-800 hover:text-slate-900"><FontAwesomeIcon icon={faUpRightFromSquare} /> Live Site</button>
+                <a href='https://github.com/Jakelliott98/NH_compliance' target="_blank" className="py-4 px-4 flex items-center justify-center gap-1 rounded-lg border-2 border-cyan-800 text-cyan-800 cursor-pointer font-black tracking-wide hover:bg-cyan-800 hover:text-slate-900"><FontAwesomeIcon icon={faGithub} /> GitHub Repo</a>
+                <a href="#" target="_blank" className="py-4 px-4 rounded-lg border-2 border-cyan-800 text-cyan-800 cursor-pointer font-black tracking-wide hover:bg-cyan-800 hover:text-slate-900 flex items-center justify-center gap-1"><FontAwesomeIcon icon={faUpRightFromSquare} /> Live Site</a>
             </div>
         </div>
     </div>
