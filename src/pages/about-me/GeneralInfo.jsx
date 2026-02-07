@@ -9,7 +9,7 @@ function GeneralInfo () {
         <div className="flex gap-15 text-slate-400">
             <div className="flex flex-col gap-5 flex-2">
                 <div className="flex flex-col gap-3">
-                    <h1 className="text-2xl md:text-5xl font-bold text-left text-slate-400">
+                    <h1 className="text-xl md:text-5xl font-bold text-left text-slate-400">
                         <span className="opacity-60">👋</span> About Me
                     </h1>
                     <p className="hidden md:block text-left text-slate-400">

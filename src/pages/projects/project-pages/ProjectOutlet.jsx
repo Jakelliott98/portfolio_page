@@ -1,4 +1,3 @@
-import FeedbackForm from "./FeedbackForm";
 import { Outlet } from "react-router";
 
 function ProjectOutlet () {
