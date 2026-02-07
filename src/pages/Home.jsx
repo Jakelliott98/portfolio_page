@@ -61,7 +61,7 @@ function Homepage () {
   }, [currentSection])
 
   return (
-    <div className=''>
+    <div>
       <HeroSection setCurrentSection={setCurrentSection}/>
       <AboutMe />
       <Projects />
@@ -71,3 +71,12 @@ function Homepage () {
 }
 
 export default Homepage;
+
+
+
+/*
+  <HeroSection setCurrentSection={setCurrentSection}/>
+  <AboutMe />
+  <Projects />
+  <ContactPage />
+*/

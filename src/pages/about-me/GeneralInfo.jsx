@@ -9,10 +9,10 @@ function GeneralInfo () {
         <div className="flex gap-15 text-slate-400">
             <div className="flex flex-col gap-5 flex-2">
                 <div className="flex flex-col gap-3">
-                    <h1 className="text-5xl font-bold text-left text-slate-400">
+                    <h1 className="text-2xl md:text-5xl font-bold text-left text-slate-400">
                         <span className="opacity-60">👋</span> About Me
                     </h1>
-                    <p className="text-left text-slate-400">
+                    <p className="hidden md:block text-left text-slate-400">
                         I’m a self-taught <span className="text-slate-100 font-medium">Frontend Developer</span> focused on building
                         <span className="text-slate-100 font-medium"> clean, user-first interfaces</span> with
                         <span className="text-slate-100 font-medium"> JavaScript and React</span>.
@@ -48,7 +48,7 @@ function GeneralInfo () {
                 </div>
                 </div>
                 <div className="flex justify-between gap-10">
-                <p className="text-left w-3/6 text-sm flex-1 text-slate-400">
+                <p className="hidden md:block text-left w-3/6 text-sm flex-1 text-slate-400">
                     I’m currently seeking a <span className="text-slate-100 font-medium">junior frontend role</span> where I can
                     continue developing my skills while contributing to
                     <span className="text-slate-100 font-medium"> real-world products</span> within a
@@ -69,7 +69,7 @@ function GeneralInfo () {
                 </div>
                 </div>
             </div>
-            <div className="flex-1 flex flex-col justify-center items-center gap-2">
+            <div className="flex-1 hidden md:flex flex-col justify-center items-center gap-2">
                 <div className="relative">
                     <div className="bg-white/95 shadow-sm  flex flex-col items-center p-14 rounded-xl z-10 md:p-16">
                         <img src={heroImage} className="w-36 h-36 bg-slate-100 rounded-full ring-2 ring-white shadow-sm"/>

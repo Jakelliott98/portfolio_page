@@ -5,17 +5,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function ContactPage () {
 
     return (
-        <div className="h-screen bg-slate-900 text-slate-200 flex flex-col p-10">
-            <h1 className="text-3xl font-black text-slate-700 p-5">John Elliott</h1>
-            <div className="flex-1 flex [&>*]:flex-1">
+        <div className="min-h-screen md:h-screen bg-slate-900 text-slate-200 flex flex-col p-10">
+            <h1 className="hidden md:block text-3xl font-black text-slate-700 p-5">John Elliott</h1>
+            <div className="flex-1 flex flex-col md:flex-row [&>*]:flex-1">
                 <div className="p-5 flex flex-col justify-center">
-                    <h1 className="text-slate-600 text-9xl font-black hover:text-slate-400 cursor-pointer">Let's Talk</h1>
-                    <p className="mt-3 text-slate-400 w-2/3">I am looking for a career transition into tech and open to discussing with any potential helpers or recruiters - Additionally I am open to any tech opportunities where I can further learn and develop skills</p>
+                    <h1 className="text-slate-600 text-3xl md:text-9xl font-black hover:text-slate-400 cursor-pointer">Let's Talk</h1>
+                    <p className="mt-3 text-slate-400 md:w-2/3">I am looking for a career transition into tech and open to discussing with any potential helpers or recruiters - Additionally I am open to any tech opportunities where I can further learn and develop skills</p>
                     <p className="text-cyan-800 mt-5 hover:text-cyan-700 w-fit">07393938301</p>
                     <p className="text-cyan-800 hover:text-cyan-700 w-fit">John98elliott@gmail.com</p>
                 </div>
                 <form action="https://formsubmit.co/86f92f776417bde93b5694851f5131cf" method="POST" className="p-5 flex flex-col justify-center gap-5">
-                    <div className="flex gap-5 [&>*]:flex-1">
+                    <div className="flex flex-col md:flex-row gap-5 [&>*]:flex-1">
                         <div className="flex flex-col gap-2">
                             <label className="font-bold text-xl text-slate-500">Name</label>
                             <input type="text" name='name' required className="p-2 border-b border-slate-500 outline-none focus:outline-none"/>
