@@ -16,18 +16,18 @@ export default function ContactPage () {
                 </div>
                 <form action="https://formsubmit.co/86f92f776417bde93b5694851f5131cf" method="POST" className="md:p-5 flex flex-col justify-center gap-5">
                     <div className="flex flex-col md:flex-row gap-5 [&>*]:flex-1">
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-1">
                             <label className="md:font-bold text-base md:text-xl text-slate-500">Name</label>
-                            <input type="text" name='name' required className="p-2 border-b border-slate-500 outline-none focus:outline-none"/>
+                            <input type="text" name='name' required className="text-sm md:text-base py-1 border-b border-slate-500 outline-none focus:outline-none"/>
                         </div>
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-1">
                             <label className="md:font-bold text-base md:text-xl text-slate-500">Email</label>
-                            <input type="email" name='email' required className="p-2 border-b border-slate-500 outline-none focus:outline-none"/>
+                            <input type="email" name='email' required className="text-sm md:text-base py-1 border-b border-slate-500 outline-none focus:outline-none"/>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-1 md:gap-2">
                         <label className="md:font-bold text-base md:text-xl text-slate-500">Message</label>
-                        <textarea type="text" name='content' required className="border border-slate-500 rounded p-2 outline-none focus:outline-none"/>
+                        <textarea type="text" name='content' required className="text-sm md:text-base border border-slate-500 rounded p-2 outline-none focus:outline-none"/>
                     </div>
                     <button type="submit" className="border border-slate-500 rounded py-3 text-slate-400 md:font-bold cursor-pointer hover:bg-slate-500 hover:text-slate-900">Send  <FontAwesomeIcon icon={faPaperPlane} className="rotate-45"/></button>
                 </form>
