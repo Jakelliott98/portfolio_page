@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBookOpen, faPersonBiking, faPlaneDeparture, faFutbol} from "@fortawesome/free-solid-svg-icons"
 import football from '../../assets/football-playing.jpeg'
 import travelling from '../../assets/travel-egypt.jpeg'
 import snorkelling from '../../assets/snorkelling.jpeg'
@@ -61,7 +59,7 @@ function PersonalLife () {
     
     return (
         <div className="">
-            <h1 className="text-5xl font-black text-slate-500 pb-20 tracking-wide text-center">
+            <h1 className="text-5xl font-black text-slate-100 pb-20 tracking-wide text-center">
                 <span className="opacity-60">🌱</span> Outside of Work
             </h1>
             <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory pb-20">
@@ -79,11 +77,11 @@ function PersonalLife () {
 
 function InterestCard ({ source, title, text}) {
     return (
-        <div className="min-w-64 h-[26rem] bg-slate-500 rounded-xl overflow-hidden flex flex-col ">
-            <img src={source} className=" w-full h-72 object-cover"/>
-            <div className=" p-2 overflow-hidden">
+        <div className="min-w-64 h-[26rem] bg-slate-800 border border-slate-700 rounded-xl overflow-hidden flex flex-col">
+            <img src={source} className="w-full h-72 object-cover"/>
+            <div className="p-2 overflow-hidden">
                 <p className="text-slate-200 font-bold">{title}</p>
-                <p className="text-slate-300/80 text-xs leading-relaxed">{text}</p>
+                <p className="text-slate-400 text-xs leading-relaxed">{text}</p>
             </div>
         </div>
     )

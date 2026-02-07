@@ -3,12 +3,12 @@ function ProfessionalLife () {
     
     return (
         <div>
-            <h1 className="text-5xl font-black text-slate-500 text-center pb-20 tracking-wide">
+            <h1 className="text-5xl font-black text-slate-100 text-center pb-20 tracking-wide">
                 <span className="opacity-60">🚀</span> Professional Journey
             </h1>
             <div className="flex gap-10 text-slate-700">
                 <div className="flex-1 bg-white/90 backdrop-blur p-6 rounded-xl flex flex-col gap-3">
-                    <h2 className="text-2xl font-bold text-center tracking-wide">My Story</h2>
+                    <h2 className="text-2xl text-center tracking-wide">My Story</h2>
                     <p className="text-sm text-slate-600 text-center flex-1 leading-relaxed">I began coding in 2024 after an introductory HTML course sparked my interest in building websites. Through self-study and discussions with developers, I committed to learning by building small, practical projects.</p>
                     <ul className="pt-4 flex justify-center gap-5 items-center text-lg text-slate-400">
                         <li><i class="devicon-html5-plain"></i></li>
@@ -16,7 +16,7 @@ function ProfessionalLife () {
                     </ul>
                 </div>
                 <div className="flex-1 bg-white/90 backdrop-blur p-6 rounded-xl flex flex-col gap-3">
-                    <h2 className="text-2xl font-bold text-center tracking-wide">Now</h2>
+                    <h2 className="text-2xl text-center tracking-wide">Now</h2>
                     <p className="text-sm flex-1 text-slate-600 text-center leading-relaxed">I work primarily with HTML, CSS, JavaScript, and React, building responsive, component-based interfaces. I’m currently using TypeScript and Tailwind to improve code safety and maintainable styling.</p>
                     <ul className="pt-4 flex justify-between items-center text-lg text-slate-400">
                         <li><i class="devicon-javascript-plain"></i></li>
@@ -28,7 +28,7 @@ function ProfessionalLife () {
                     </ul>
                 </div>
                 <div className="flex-1 bg-white/90 backdrop-blur p-6 rounded-xl flex flex-col gap-3">
-                    <h2 className="text-2xl font-bold text-center tracking-wide">Next</h2>
+                    <h2 className="text-2xl text-center tracking-wide">Next</h2>
                     <p className="text-sm flex-1 text-slate-600 text-center leading-relaxed">I’m focusing on learning Next.js and Redux to improve application structure, performance, and state management, with the goal of building more scalable, production-ready projects.</p>
                     <ul className="pt-4 flex justify-between items-center text-lg text-slate-400">
                         <li><i class="devicon-redux-original"></i></li>
@@ -39,7 +39,7 @@ function ProfessionalLife () {
                     </ul>
                 </div>
                 <div className="flex-1 bg-white/90 backdrop-blur p-6 rounded-xl flex flex-col gap-3">
-                    <h2 className="text-2xl font-bold text-center tracking-wide">Later</h2>
+                    <h2 className="text-2xl text-center tracking-wide">Later</h2>
                     <p className="text-sm flex-1 text-slate-600 text-center leading-relaxed">Long term, I aim to expand into testing, deployment, and cloud services to better understand the full lifecycle of modern applications and how they scale in real-world environments.</p>
                     <ul className="pt-4 flex justify-between items-center text-lg text-slate-400">
                         <li><i class="devicon-postgresql-plain"></i></li>

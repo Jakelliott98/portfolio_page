@@ -9,19 +9,19 @@ function GeneralInfo () {
         <div className="flex gap-15 text-slate-400">
             <div className="flex flex-col gap-5 flex-2">
                 <div className="flex flex-col gap-3">
-                    <h1 className="text-xl md:text-5xl font-bold text-left text-slate-400">
+                    <h1 className="text-xl md:text-5xl font-bold text-left text-slate-100">
                         <span className="opacity-60">👋</span> About Me
                     </h1>
                     <p className="hidden md:block text-left text-slate-400">
-                        I’m a self-taught <span className="text-slate-100 font-medium">Frontend Developer</span> focused on building
-                        <span className="text-slate-100 font-medium"> clean, user-first interfaces</span> with
-                        <span className="text-slate-100 font-medium"> JavaScript and React</span>.
+                        I’m a self-taught <span className="text-slate-200 font-medium">Frontend Developer</span> focused on building
+                        <span className="text-slate-200 font-medium"> clean, user-first interfaces</span> with
+                        <span className="text-slate-200 font-medium"> JavaScript and React</span>.
                         <br /><br />
-                        I’ve developed my skills through <span className="text-slate-100 font-medium">structured learning</span> and by
-                        delivering <span className="text-slate-100 font-medium">internal tools</span> within my current healthcare role,
-                        working through <span className="text-slate-100 font-medium">real feedback loops</span> with managers and stakeholders.
+                        I’ve developed my skills through <span className="text-slate-200 font-medium">structured learning</span> and by
+                        delivering <span className="text-slate-200 font-medium">internal tools</span> within my current healthcare role,
+                        working through <span className="text-slate-200 font-medium">real feedback loops</span> with managers and stakeholders.
                         This experience has shaped how I approach development —
-                        <span className="text-slate-100 font-medium"> prioritising clarity, usability, and maintainable code</span>.
+                        <span className="text-slate-200 font-medium"> prioritising clarity, usability, and maintainable code</span>.
                     </p>
                 </div>
                 <div className="flex [&>*]:flex-1">
@@ -32,14 +32,14 @@ function GeneralInfo () {
 
                     <div className="flex flex-col text-left text-sm text-slate-400">
                     <p>
-                        <span className="text-slate-100 font-medium">Codecademy — Front-End Engineer</span>
+                        <span className="text-slate-200 font-medium">Codecademy — Front-End Engineer</span>
                         <span className="block text-xs text-slate-500">
                         Core JavaScript, React, responsive layouts
                         </span>
                     </p>
 
                     <p className="mt-2">
-                        <span className="text-slate-100 font-medium">The Odin Project — Frontend</span>
+                        <span className="text-slate-200 font-medium">The Odin Project — Frontend</span>
                         <span className="block text-xs text-slate-500">
                         Real projects, Git workflow, problem-solving fundamentals
                         </span>
@@ -49,10 +49,10 @@ function GeneralInfo () {
                 </div>
                 <div className="flex justify-between gap-10">
                 <p className="hidden md:block text-left w-3/6 text-sm flex-1 text-slate-400">
-                    I’m currently seeking a <span className="text-slate-100 font-medium">junior frontend role</span> where I can
+                    I’m currently seeking a <span className="text-slate-200 font-medium">junior frontend role</span> where I can
                     continue developing my skills while contributing to
-                    <span className="text-slate-100 font-medium"> real-world products</span> within a
-                    <span className="text-slate-100 font-medium"> collaborative, professional team</span>.
+                    <span className="text-slate-200 font-medium"> real-world products</span> within a
+                    <span className="text-slate-200 font-medium"> collaborative, professional team</span>.
                 </p>
 
                 <div>
@@ -61,10 +61,9 @@ function GeneralInfo () {
                     <FontAwesomeIcon icon={faChevronDown} />
                     </div>
 
-                    <div className="text-xl flex justify-between pt-2 text-slate-400">
-                    <a href='mailto:john98elliott@gmail.com?subject=Portfolio%20Contact%20Me'><FontAwesomeIcon icon={faEnvelope} className="cursor-pointer hover:scale-110 hover:text-white"/></a>
-                    <a href="https://www.linkedin.com/in/john-elliott1998/"><FontAwesomeIcon icon={faSquareLinkedin} className="cursor-pointer hover:scale-110 hover:text-white"/></a>
-                    <a><FontAwesomeIcon icon={faSquareXTwitter} className="cursor-pointer hover:scale-110 hover:text-white"/></a>
+                    <div className="text-2xl flex justify-center gap-5 pt-2 text-slate-400">
+                    <a href='mailto:john98elliott@gmail.com?subject=Portfolio%20Contact%20Me'><FontAwesomeIcon icon={faEnvelope} className="cursor-pointer hover:scale-110 hover:text-slate-100"/></a>
+                    <a href="https://www.linkedin.com/in/john-elliott1998/"><FontAwesomeIcon icon={faSquareLinkedin} className="cursor-pointer hover:scale-110 hover:text-slate-100"/></a>
                     </div>
                 </div>
                 </div>
@@ -100,7 +99,7 @@ function GeneralInfo () {
                         </div>
                     </div>
                 </div>
-                <button className="rounded-xl py-2 px-4 cursor-pointer bg-white/90 text-slate-800 shadow-sm tracking-wide ring-2 ring-white text-sm hover:bg-white hover:text-slate-900">Download CV</button>
+                <button className="rounded-xl py-2 px-4 cursor-pointer bg-violet-600 text-white shadow-sm tracking-wide text-sm hover:bg-violet-500 focus:ring-2 focus:ring-violet-400/60">Download CV</button>
             </div>
         </div>
     )
