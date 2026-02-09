@@ -24,12 +24,12 @@ function ComplianceTracker () {
 
     return (
     <div className="p-5 min-h-screen md:px-40 md:py-15 bg-slate-900 flex flex-col gap-5 text-white">
-        <p onClick={() => navigate('/')} className="py-2 md:py-0 absolute text-violet-800 flex gap-2 items-center cursor-pointer hover:translate-x-[-5px]">
+        <p onClick={() => navigate('/')} className="py-2 md:py-0 absolute text-violet-400 hover:text-violet-300 flex gap-2 items-center cursor-pointer hover:translate-x-[-5px]">
             <FontAwesomeIcon icon={faArrowLeftLong} className=""/>
             <span className="hidden md:block">Back</span>
         </p>
         <div>
-            <h1 className="text-center text-xl md:text-5xl font-black">Compliance Tracker</h1>
+            <h1 className="text-center sectionHeading">Compliance Tracker</h1>
             <div className="flex gap-2 items-center justify-center">
                 <p className="text-center text-sm text-slate-400">JavaScript |</p>
                 <p className="text-center text-sm text-slate-400">React |</p>
@@ -37,11 +37,11 @@ function ComplianceTracker () {
             </div>
         </div>
         <div className="">
-            <h2 className="text-lg md:text-3xl">Why?</h2>
+            <h2 className="subHeadings">Why?</h2>
             <p className="text-xs md:text-base text-slate-400">Compliance data was previously spread across multiple Excel files, making it slow and manual to review site-wide status. I designed a centralised web app that streamlines data entry and surfaces compliance issues through dashboards and visual status flags, building on earlier patterns with role-based access, scalable layouts, and more complex UI state management.</p>
         </div>
         <div>
-            <h2 className="text-lg md:text-3xl">Key Features</h2>
+            <h2 className="subHeadings">Key Features</h2>
             <div>
                 {keyFeatures.map(feature => (
                     <div>
@@ -67,8 +67,8 @@ function ComplianceTracker () {
         </div>
         <div className="flex justify-center">
             <div className="flex flex-col md:flex-row [&>*]:flex-1 gap-3 md:gap-10 md:px-10 md:w-2/3">
-                <a href='https://github.com/Jakelliott98/NH_compliance' target="_blank" className="font-semibold flex items-center justify-center gap-1 py-4 px-4 rounded-lg border-2 border-violet-800 text-violet-800 cursor-pointer md:font-black tracking-wide hover:bg-violet-800 hover:text-slate-900"><FontAwesomeIcon icon={faGithub} /> GitHub Repo</a>
-                <a href="#" target="_blank" className="flex items-center justify-center gap-1 py-4 px-4 rounded-lg border-2 border-violet-800 text-violet-800 cursor-pointer font-semibold md:font-black tracking-wide hover:bg-violet-800 hover:text-slate-900"><FontAwesomeIcon icon={faUpRightFromSquare} /> Live Site</a>
+                <a href='https://github.com/Jakelliott98/NH_compliance' target="_blank" className="font-semibold flex items-center justify-center gap-1 py-4 px-4 rounded-lg border-2 cursor-pointer md:font-black tracking-wide ctaButtons"><FontAwesomeIcon icon={faGithub} /> GitHub Repo</a>
+                <a href="" target="_blank" className="flex items-center justify-center gap-1 py-4 px-4 rounded-lg border-2 cursor-pointer font-semibold md:font-black tracking-wide ctaButtons"><FontAwesomeIcon icon={faUpRightFromSquare} /> Live Site</a>
             </div>
         </div>
     </div>

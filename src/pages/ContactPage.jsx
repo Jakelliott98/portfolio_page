@@ -28,7 +28,7 @@ export default function ContactPage () {
                         <label className="text-base md:text-xl text-slate-400">Message</label>
                         <textarea type="text" name='content' required className="text-sm md:text-base border border-slate-600 rounded p-2 outline-none focus:outline-none"/>
                     </div>
-                    <button type="submit" className="bg-violet-600 border border-slate-600 rounded py-3 text-slate-200 font- cursor-pointer hover:bg-violet-500 hover:text-white">Send  <FontAwesomeIcon icon={faPaperPlane} className="rotate-45"/></button>
+                    <button type="submit" className="border rounded py-3 text-slate-200 font- cursor-pointer ctaButtons">Send  <FontAwesomeIcon icon={faPaperPlane} className="rotate-45"/></button>
                 </form>
             </div>
             <div className="w-full flex items-center justify-center">
