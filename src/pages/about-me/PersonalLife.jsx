@@ -59,7 +59,7 @@ function PersonalLife () {
     
     return (
         <div className="">
-            <h1 className="text-5xl font-black text-slate-100 pb-20 tracking-wide text-center">
+            <h1 className="sectionHeading pb-10 text-center">
                 <span className="opacity-60">🌱</span> Outside of Work
             </h1>
             <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory pb-20">
@@ -77,11 +77,11 @@ function PersonalLife () {
 
 function InterestCard ({ source, title, text}) {
     return (
-        <div className="min-w-64 h-[26rem] bg-slate-800 border border-slate-700 rounded-xl overflow-hidden flex flex-col">
+        <div className="min-w-64 h-[28rem] bg-slate-800/80 border border-slate-700 rounded-xl overflow-hidden flex flex-col">
             <img src={source} className="w-full h-72 object-cover"/>
             <div className="p-2 overflow-hidden">
-                <p className="text-slate-200 font-bold">{title}</p>
-                <p className="text-slate-400 text-xs leading-relaxed">{text}</p>
+                <p className="text-xl text-slate-100 font-semibold">{title}</p>
+                <p className="text-slate-300 text-sm leading-relaxed">{text}</p>
             </div>
         </div>
     )

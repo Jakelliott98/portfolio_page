@@ -1,45 +1,47 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronDown, faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { faSquareLinkedin, faSquareXTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faSquareLinkedin } from "@fortawesome/free-brands-svg-icons"
 import heroImage from '../../assets/Hero_me.png'
 
 function GeneralInfo () {
     
     return (
-        <div className="flex gap-15 text-slate-400">
-            <div className="flex flex-col gap-5 flex-2">
-                <div className="flex flex-col gap-3">
-                    <h1 className="text-xl md:text-5xl font-bold text-left text-slate-100">
+        <div className="flex flex-col items-center gap-10 text-slate-300">
+            <h1 className="sectionHeading text-center text-left">
                         <span className="opacity-60">👋</span> About Me
-                    </h1>
-                    <p className="hidden md:block text-left text-slate-400">
-                        I’m a self-taught <span className="text-slate-200 font-medium">Frontend Developer</span> focused on building
-                        <span className="text-slate-200 font-medium"> clean, user-first interfaces</span> with
-                        <span className="text-slate-200 font-medium"> JavaScript and React</span>.
+                </h1>
+            <div className="flex gap-15 text-slate-300">
+            <div className="flex flex-col gap-5 flex-2">
+                
+                <div className="flex flex-col gap-3">
+                    <p className="hidden md:block text-left text-slate-300">
+                        I’m a self-taught <span className="supportingText">Frontend Developer</span> focused on building
+                        <span className="supportingText"> clean, user-first interfaces</span> with
+                        <span className="supportingText"> JavaScript and React</span>.
                         <br /><br />
-                        I’ve developed my skills through <span className="text-slate-200 font-medium">structured learning</span> and by
-                        delivering <span className="text-slate-200 font-medium">internal tools</span> within my current healthcare role,
-                        working through <span className="text-slate-200 font-medium">real feedback loops</span> with managers and stakeholders.
+                        I’ve developed my skills through <span className="supportingText">structured learning</span> and by
+                        delivering <span className="supportingText">internal tools</span> within my current healthcare role,
+                        working through <span className="supportingText">real feedback loops</span> with managers and stakeholders.
                         This experience has shaped how I approach development —
-                        <span className="text-slate-200 font-medium"> prioritising clarity, usability, and maintainable code</span>.
+                        <span className="supportingText"> prioritising clarity, usability, and maintainable code</span>.
                     </p>
                 </div>
                 <div className="flex [&>*]:flex-1">
                 <div className="flex flex-col gap-2">
-                    <p className="text-left text-sm underline text-slate-400">
+                    <p className="text-left text-sm underline text-slate-300">
                     Learning Path
                     </p>
 
-                    <div className="flex flex-col text-left text-sm text-slate-400">
+                    <div className="flex flex-col text-left text-sm text-slate-300">
                     <p>
-                        <span className="text-slate-200 font-medium">Codecademy — Front-End Engineer</span>
+                        <span className="supportingText">Codecademy — Front-End Engineer</span>
                         <span className="block text-xs text-slate-500">
                         Core JavaScript, React, responsive layouts
                         </span>
                     </p>
 
                     <p className="mt-2">
-                        <span className="text-slate-200 font-medium">The Odin Project — Frontend</span>
+                        <span className="supportingText">The Odin Project — Frontend</span>
                         <span className="block text-xs text-slate-500">
                         Real projects, Git workflow, problem-solving fundamentals
                         </span>
@@ -48,11 +50,11 @@ function GeneralInfo () {
                 </div>
                 </div>
                 <div className="flex justify-between gap-10">
-                <p className="hidden md:block text-left w-3/6 text-sm flex-1 text-slate-400">
-                    I’m currently seeking a <span className="text-slate-200 font-medium">junior frontend role</span> where I can
+                <p className="hidden md:block text-left w-3/6 text-sm flex-1 text-slate-300">
+                    I’m currently seeking a <span className="supportingText">junior frontend role</span> where I can
                     continue developing my skills while contributing to
-                    <span className="text-slate-200 font-medium"> real-world products</span> within a
-                    <span className="text-slate-200 font-medium"> collaborative, professional team</span>.
+                    <span className="supportingText"> real-world products</span> within a
+                    <span className="supportingText"> collaborative, professional team</span>.
                 </p>
 
                 <div>
@@ -61,7 +63,7 @@ function GeneralInfo () {
                     <FontAwesomeIcon icon={faChevronDown} />
                     </div>
 
-                    <div className="text-2xl flex justify-center gap-5 pt-2 text-slate-400">
+                    <div className="text-2xl flex justify-center gap-5 pt-2 text-slate-300">
                     <a href='mailto:john98elliott@gmail.com?subject=Portfolio%20Contact%20Me'><FontAwesomeIcon icon={faEnvelope} className="cursor-pointer hover:scale-110 hover:text-slate-100"/></a>
                     <a href="https://www.linkedin.com/in/john-elliott1998/"><FontAwesomeIcon icon={faSquareLinkedin} className="cursor-pointer hover:scale-110 hover:text-slate-100"/></a>
                     </div>
@@ -100,6 +102,7 @@ function GeneralInfo () {
                     </div>
                 </div>
                 <button className="rounded-xl py-2 px-4 cursor-pointer bg-violet-600 text-white shadow-sm tracking-wide text-sm hover:bg-violet-500 focus:ring-2 focus:ring-violet-400/60">Download CV</button>
+            </div>
             </div>
         </div>
     )

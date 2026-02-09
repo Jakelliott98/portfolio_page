@@ -7,7 +7,7 @@ export default function Projects () {
 
     return (
         <div className="md:min-h-screen text-slate-200 flex flex-col md:items-center md:px-5 md:p-10">
-            <h1 className="text-xl md:text-6xl md:text-center md:mb-5 font-black text-slate-100">Projects</h1>
+            <h1 className="sectionHeading md:text-center md:mb-5">Projects</h1>
             <div className="flex-1 flex flex-col md:px-25 gap-5 py-2 md:py-10 w-full [&>*]:flex-grow">
                 {
                     projectList.map(project => (

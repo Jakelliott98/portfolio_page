@@ -125,3 +125,11 @@
     @apply bg-background text-foreground;
     }
 }
+
+.supportingText {
+    @apply font-semibold text-slate-100
+}
+
+.sectionHeading {
+    @apply text-4xl md:text-6xl font-black text-slate-100 tracking-tight
+}
