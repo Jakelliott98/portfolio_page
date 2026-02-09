@@ -2,12 +2,12 @@
 function ProfessionalLife () {
     
     return (
-        <div>
-            <h1 className="sectionHeading text-center pb-10">
+        <div className="contents h-full">
+            <h1 className="sectionHeading text-center">
                 <span className="opacity-60">🚀</span> Professional Journey
             </h1>
-            <div className="flex gap-10 text-slate-700">
-                <div className="flex-1 bg-slate-800/80 backdrop-blur p-6 rounded-xl flex flex-col gap-3">
+            <div className="flex gap-10 text-slate-700 h-full">
+                <div className="h-full flex-1 bg-slate-800/80 backdrop-blur p-6 rounded-xl flex flex-col gap-3">
                     <h2 className="text-xl font-semibold text-slate-100 text-center">My Story</h2>
                     <p className="text-sm text-slate-300 text-center flex-1 leading-relaxed">I began coding in 2024 after an introductory HTML course sparked my interest in building websites. Through self-study and discussions with developers, I committed to learning by building small, practical projects.</p>
                     <ul className="pt-4 flex justify-center gap-5 items-center text-lg text-slate-500">
@@ -49,7 +49,7 @@ function ProfessionalLife () {
                     </ul>
                 </div>
             </div>
-            <div className="flex justify-between text-slate-800 text-3xl pt-10">
+            <div className="flex justify-between text-slate-800 text-3xl">
                 <i class="devicon-html5-plain-wordmark"></i>   
                 <i class="devicon-css3-plain"></i>
                 <i class="devicon-javascript-plain"></i>

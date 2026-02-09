@@ -58,11 +58,11 @@ const personalInterests = [
 function PersonalLife () {
     
     return (
-        <div className="">
-            <h1 className="sectionHeading pb-10 text-center">
+        <div className="min-h-full contents">
+            <h1 className="sectionHeading text-center">
                 <span className="opacity-60">🌱</span> Outside of Work
             </h1>
-            <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory pb-20">
+            <div className="w-full max-w-full flex gap-4 overflow-x-auto snap-x snap-mandatory">
                 {
                     personalInterests.map((item) => {
                         return (
@@ -77,8 +77,8 @@ function PersonalLife () {
 
 function InterestCard ({ source, title, text}) {
     return (
-        <div className="min-w-64 h-[28rem] bg-slate-800/80 border border-slate-700 rounded-xl overflow-hidden flex flex-col">
-            <img src={source} className="w-full h-72 object-cover"/>
+        <div className="min-w-64 min-h-full bg-slate-800/80 border border-slate-700 rounded-xl overflow-hidden flex flex-col">
+            <img src={source} className="w-full h-64 object-cover"/>
             <div className="p-2 overflow-hidden">
                 <p className="text-xl text-slate-100 font-semibold">{title}</p>
                 <p className="text-slate-300 text-sm leading-relaxed">{text}</p>
@@ -88,3 +88,22 @@ function InterestCard ({ source, title, text}) {
 }
 
 export default PersonalLife;
+
+
+/*
+  <h1 className="sectionHeading bg-yellow-100 text-center">
+                <span className="opacity-60">🌱</span> Outside of Work
+            </h1>
+            <div className="row-start-2 flex-1 flex items-center justify-center w-full max-w-full flex gap-4 overflow-x-auto snap-x snap-mandatory">
+                {
+                    personalInterests.map((item) => {
+                        return (
+                            <InterestCard title={item.title} text={item.text} source={item.source} />
+                        )
+                    })
+                }
+            </div>
+            <div className='row-start-3 bg-yellow-100'>
+                hi
+            </div>
+            */

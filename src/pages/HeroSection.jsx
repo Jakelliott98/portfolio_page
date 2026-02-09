@@ -1,11 +1,12 @@
 import heroImage from '../assets/animated-picture.png'
+import HeaderSection from './HeaderSection'
 
 export default function HeroSection () {
 
     return (
-        <div className="md:h-screen md:min-h-screen md:max-h-screen text-slate-300 overflow-hidden">
+        <div className="md:h-screen md:min-h-screen md:max-h-screen text-slate-300 flex flex-col">
             <HeaderSection />
-            <div className="flex flex-col h-full">
+            <div className="flex-1 flex flex-col">
                 <div className="flex-1 md:px-10 md:px-20 flex flex-col gap-5 md:gap-0 md:flex-row h-full [&>*]:flex-1">
                     <div className="flex justify-center items-center w-full">
                         <div className="w-full flex flex-col justify-center items-left [&>*]:text-left">
@@ -20,24 +21,6 @@ export default function HeroSection () {
                     </div>
                 </div>
             </div>
-        </div>
-    )
-}
-
-function HeaderSection ({ onSelect }) {
-    
-    return (
-        <div className="hidden md:flex py-5 w-full px-10 items-center justify-between text-slate-100 absolute border-b-1 border-slate-800">
-            <div className="h-full flex items-center justify-center self-start gap-2">
-                <p className='text-slate-300'>JOHN ELLIOTT</p>
-                <p>|</p>
-                <p className='text-slate-300'>FRONTEND DEVELOPER</p>
-            </div>
-            <nav className="h-full flex gap-5 items-center justify-center self-end relative z-2">
-                <a className='hover:text-slate-300 cursor-pointer' onClick={() => onSelect(1)}>ABOUT</a>
-                <a className='hover:text-slate-300 cursor-pointer' onClick={() => onSelect(2)}>PROJECTS</a>
-                <a className='hover:text-slate-300 cursor-pointer' onClick={() => onSelect(3)}>CONTACT</a>
-            </nav>
         </div>
     )
 }
