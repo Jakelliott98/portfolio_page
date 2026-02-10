@@ -1,7 +1,7 @@
 const projectList = [
     {
         title: 'Feedback Form',
-        description: 'A QR-based client feedback system with a secure analytics portal, built to collect assessment feedback and present it through filtered tables and visual insights for clinicians and managers.',
+        description: 'An end‑to‑end system that collects and organises client feedback through a simple form, storing responses in Supabase and presenting them in an authenticated, centralised portal for quick, meaningful analysis.',
         languages: ['JavaScript', 'React', 'HTML', 'CSS', 'Supabase', 'Clerk', 'React Router'],
         route: 'feedbackForm',
     },
