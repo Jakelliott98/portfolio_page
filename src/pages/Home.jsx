@@ -7,7 +7,7 @@ import Projects from './projects/Projects'
 function Homepage () {
   
   return (
-    <div className="md:px-10 bg-slate-900 p-5 md:p-0 flex flex-col gap-10">
+    <div className="md:px-10 bg-slate-900 p-5 md:p-0 flex flex-col md:gap-10">
         <HeroSection/>
         <AboutMe />
         <Projects />
