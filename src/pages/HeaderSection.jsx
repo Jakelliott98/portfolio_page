@@ -10,7 +10,7 @@ export default function HeaderSection ({ onSelect }) {
                 <a href="#projects" className='hover:text-slate-300 cursor-pointer' onClick={() => onSelect(2)}>PROJECTS</a>
                 <a href="#contactPage" className='hover:text-slate-300 cursor-pointer' onClick={() => onSelect(3)}>CONTACT</a>
             </nav>
-            <a href="#contactPage" className="text-slate-100 hover:text-violet-400 flex items-center gap-1 cursor-pointer">
+            <a href="#contactPage" className="cursor-pointer text-slate-100 hover:text-violet-400 flex items-center gap-1 cursor-pointer">
                 <p className="border-b border-slate-100 hover:border-violet-400">Get In Touch</p>
                 <FontAwesomeIcon icon={faArrowRightLong} className="rotate-[-45deg]"/>
             </a>
