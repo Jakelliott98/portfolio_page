@@ -14,7 +14,7 @@ export default function AboutMe () {
             <p onClick={() => setIndex(prev => prev - 1)} className={`hidden md:block ${index === 0 && 'md:hidden'}`}>
                 <FontAwesomeIcon className="cursor-pointer text-2xl text-slate-500 hover:text-slate-50" icon={faAnglesLeft} />
             </p>
-            <div className="px-20 h-full flex-1 overflow-hidden grid grid-rows-[64px_1fr_64px] md:gap-10">
+            <div className="md:px-20 h-full flex-1 overflow-hidden grid grid-rows-[64px_1fr_64px] md:gap-10">
                 { index === 0 ? (<PersonalLife />) : index === 1 ? (<GeneralInfo />) : (<ProfessionalLife />) }
             </div>
             <p onClick={() => setIndex((prev => prev+1))} className={`hidden md:block ${index === 2 && 'md:hidden'}`}>
