@@ -36,9 +36,9 @@ export default function HeroSection () {
                     <img src={heroImage} className='hidden md:block w-[500px] h-[500px] rounded-full object-cover border-4 border-violet-600 shadow-[0_0_60px_rgba(139,92,246,0.35)]'/>
                 </div>
             </section>
-            <div className='absolute w-full bottom-1.5 flex items-center justify-center pb-10 animate-bounce text-slate-200'>
-                <FontAwesomeIcon icon={faAnglesDown} className={visible && 'opacity-0  transition-opacity duration-500'}/>
-            </div>
+            <FontAwesomeIcon icon={faAnglesDown} className={`absolute w-full bottom-15 md:bottom-5 left-1/2 animate-bounce transition-opacity duration-500 ${visible && 'opacity-0'}`}/>
         </div>
     )
 }
+
+//             <div className='absolute h-fit w-screen bottom-1.5 flex items-center justify-center md:pb-10 animate-bounce text-slate-200'>
