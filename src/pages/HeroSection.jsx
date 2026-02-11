@@ -3,6 +3,9 @@ import HeaderSection from './HeaderSection'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from 'react'
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faSquareLinkedin } from "@fortawesome/free-brands-svg-icons"
+
 
 export default function HeroSection () {
 
@@ -23,14 +26,16 @@ export default function HeroSection () {
                         <img src={heroImage} className='mb-5 md:hidden w-[200px] h-[200px] rounded-full object-cover border-4 border-violet-600 shadow-[0_0_60px_rgba(139,92,246,0.35)]'/>
                         <h1 className="text-4xl md:text-9xl font-black text-slate-100">JOHN ELLIOTT</h1>
                         <h2 className="text-xl md:text-3xl text-slate-200 font-semibold md:font-light md:text-left">Frontend Developer</h2>
-                        <p className='hidden md:block text-slate-300 mt-6'> 
-                            <span className='supportingText'>Self-taught JavaScript and React Developer</span> focused on building <span className='supportingText'>practical and user-friendly web experiences</span>.
+                        <p className='text-slate-300 mt-3 md:mt-6 text-center md:text-left'> 
+                            <span className='supportingText'>Self-taught JavaScript and React Developer</span> focused on building <span className='supportingText'>clean, user-first interfaces</span>.
                             <span className='hidden md:inline'> 
                                 &nbsp;Looking to join teams where I can <span className='supportingText'>contribute value </span> and <span className='supportingText'>keep growing as a developer.</span>
                             </span>
                         </p>
-                        <p className='text-slate-400 md:hidden mt-3'>Self-taught JavaScript and React Developer focused on building practical and user-friendly web experiences. Looking to join teams where I can contribute value and keep growing as a developer. </p>
-                    </div>                        
+                        <div className='pt-5'>
+                            <button className="rounded-xl py-2 px-4 cursor-pointer ctaButtons shadow-sm tracking-wide text-sm border">Download CV</button>
+                        </div>
+                    </div>                       
                 </div>
                 <div className="flex-3 flex justify-center items-center relative">
                     <img src={heroImage} className='hidden md:block w-[500px] h-[500px] rounded-full object-cover border-4 border-violet-600 shadow-[0_0_60px_rgba(139,92,246,0.35)]'/>

@@ -11,13 +11,13 @@ export default function AboutMe () {
 
     return (
         <div className="md:h-screen text-slate-200 md:items-center flex gap-10 md:py-20">
-            <p onClick={() => setIndex(prev => prev - 1)} className="hidden md:block">
+            <p onClick={() => setIndex(prev => prev - 1)} className={`hidden md:block ${index === 0 && 'md:hidden'}`}>
                 <FontAwesomeIcon className="cursor-pointer text-2xl text-slate-500 hover:text-slate-50" icon={faAnglesLeft} />
             </p>
-            <div className="h-full flex-1 overflow-hidden grid grid-rows-[64px_1fr_64px] md:gap-10">
+            <div className="px-20 h-full flex-1 overflow-hidden grid grid-rows-[64px_1fr_64px] md:gap-10">
                 { index === 0 ? (<PersonalLife />) : index === 1 ? (<GeneralInfo />) : (<ProfessionalLife />) }
             </div>
-            <p onClick={() => setIndex((prev => prev+1))} className="hidden md:block">
+            <p onClick={() => setIndex((prev => prev+1))} className={`hidden md:block ${index === 2 && 'md:hidden'}`}>
                 <FontAwesomeIcon className="cursor-pointer text-2xl text-slate-500 hover:text-slate-50" icon={faAnglesRight} />
             </p>
         </div>

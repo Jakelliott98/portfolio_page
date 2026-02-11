@@ -60,7 +60,7 @@ function PersonalLife () {
     return (
         <div className="min-h-full contents">
             <h1 className="sectionHeading text-center">
-                <span className="opacity-60">🌱</span> Outside of Work
+                <span>🌱</span> Outside of Work
             </h1>
             <div className="w-full max-w-full flex gap-4 overflow-x-auto snap-x snap-mandatory">
                 {

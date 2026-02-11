@@ -4,7 +4,7 @@ function ProfessionalLife () {
     return (
         <div className="contents h-full">
             <h1 className="sectionHeading text-center">
-                <span className="opacity-60">🚀</span> Professional Journey
+                <span>🚀</span> Professional Journey
             </h1>
             <div className="flex gap-10 text-slate-700 h-full">
                 <div className="h-full flex-1 bg-slate-800/80 backdrop-blur p-6 rounded-xl flex flex-col gap-3">
