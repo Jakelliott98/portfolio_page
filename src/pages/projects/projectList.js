@@ -7,7 +7,7 @@ const projectList = [
     },
     {
         title: 'Compliance Tracker',
-        description: 'A secure internal tool for tracking clinical equipment compliance across multiple sites, using dashboards, status flags, and drill-down pages to highlight calibration, cleaning, and control requirements at a glance.',
+        description: 'A secure internal tool for tracking clinical equipment compliance across multiple sites, using dashboards and status flags to highlight calibration, cleaning, and control compliance.',
         languages: ['JavaScript', 'React', 'TypeScript', 'Tailwind', 'React Query', 'Supabase', 'Clerk', 'React Router'],
         route: 'complainceTracker',
     },

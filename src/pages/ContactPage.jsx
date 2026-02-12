@@ -5,11 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function ContactPage () {
 
     return (
-        <div className="min-h-screen md:h-screen text-slate-200 flex flex-col md:p-10">
-            <div className="flex-1 flex flex-col md:flex-row [&>*]:flex-1">
+        <div className="md:min-h-screen md:h-screen text-slate-200 flex flex-col gap-10 md:gap-0 md:p-10 mt-20 md:mt-0">
+            <div className="flex-1 flex flex-col md:flex-row md:[&>*]:flex-1 gap-5 md:gap-0">
                 <div className="md:p-5 flex flex-col justify-center items-center md:items-start">
                     <h1 className="text-slate-100 text-4xl md:text-9xl font-black cursor-pointer">Let's Talk</h1>
-                    <p className="text-sm md:text-base mt-3 text-slate-400 md:w-2/3 text-center md:text-left">I am looking for a career transition into tech and open to discussing with any potential helpers or recruiters - Additionally I am open to any tech opportunities where I can further learn and develop skills</p>
+                    <p className="text-sm md:text-base mt-3 text-slate-400 md:w-2/3 text-center md:text-left"> I’m exploring <span className="text-slate-300 font-semibold">opportunities in tech</span> as I continue growing my skills in <span className="text-slate-300 font-semibold">frontend development</span>. With a background in <span className="text-slate-300 font-semibold">healthcare</span> and a strong focus on learning, I’m open to connecting with <span className="text-slate-300 font-semibold">teams, mentors, and recruiters</span> as I build experience in this field. </p>
                     <p className="text-sm md:text-base text-violet-400 mt-5 w-fit cursor-pointer" onClick={() => navigator.clipboard.writeText('07393938301')}>07393938301 <FontAwesomeIcon icon={faCopy} /></p>
                     <p className="text-sm md:text-base text-violet-400 w-fit cursor-pointer" onClick={() => navigator.clipboard.writeText('john98elliott@gmail.com')}>John98elliott@gmail.com <FontAwesomeIcon icon={faCopy} /></p>
                 </div>

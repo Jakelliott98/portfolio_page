@@ -18,7 +18,7 @@ export default function HeroSection () {
     }, [])
 
     return (
-        <div className="pt-20 md:pt-0 h-screen md:min-h-screen md:max-h-screen text-slate-300 flex flex-col">
+        <div className="h-screen md:min-h-screen md:max-h-screen text-slate-300 flex flex-col">
             <HeaderSection />
             <section className="h-full md:px-20 flex flex-col md:flex-row gap-5 md:gap-0">
                 <div className="flex-1 flex justify-center items-center w-full">
@@ -39,11 +39,11 @@ export default function HeroSection () {
                         </div>
                     </div>                       
                 </div>
-                <div className="flex-3 flex justify-center items-center relative">
-                    <img src={heroImage} className='hidden md:block w-[500px] h-[500px] rounded-full object-cover border-4 border-violet-600 shadow-[0_0_60px_rgba(139,92,246,0.35)]'/>
+                <div className="hidden md:flex flex-3 justify-center items-center relative">
+                    <img src={heroImage} className='w-[500px] h-[500px] rounded-full object-cover border-4 border-violet-600 shadow-[0_0_60px_rgba(139,92,246,0.35)]'/>
                 </div>
             </section>
-            <FontAwesomeIcon icon={faAnglesDown} className={`absolute w-full bottom-15 md:bottom-5 left-1/2 animate-bounce transition-opacity duration-500 ${visible && 'opacity-0'}`}/>
+            <FontAwesomeIcon icon={faAnglesDown} className={`absolute w-full bottom-10 md:bottom-5 left-1/2 animate-bounce transition-opacity duration-500 ${visible && 'opacity-0'}`}/>
         </div>
     )
 }

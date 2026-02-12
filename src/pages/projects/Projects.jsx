@@ -6,7 +6,7 @@ import { useNavigate } from "react-router"
 export default function Projects () {
 
     return (
-        <div className="md:min-h-screen text-slate-200 flex flex-col md:items-center md:px-5 md:p-10">
+        <div className="md:min-h-screen text-slate-200 flex flex-col md:items-center md:px-5 md:p-10 mt-20 md:mt-0">
             <h1 className="sectionHeading text-center md:mb-5 pb-5 md:pb-0">Projects</h1>
             <div className="flex-1 flex flex-col md:px-25 gap-5 py-2 md:py-10 w-full [&>*]:flex-grow">
                 {
@@ -29,7 +29,7 @@ function ProjectCard ({ project }) {
                     <div className='hidden md:block flex-1 bg-slate-600 rounded'>
                         <img src="#"/>
                     </div>
-                    <div className="flex-4 flex flex-col items-start">
+                    <div className="flex-4 flex flex-col items-start gap-2 md:gap-0">
                         <h1 className="text-base md:text-xl font-bold group-hover:text-violet-400 flex items-center gap-3"> {project.title} <FontAwesomeIcon className="text-md text-transparent group-hover:text-violet-800 transition-all duration-200" icon={faUpRightFromSquare} /></h1>
                         <p className="text-sm md:text-base text-slate-400 pt-1 text-start flex-1">{project.description}</p>
                         <ul className="flex flex-wrap gap-2 pt-2">
