@@ -33,7 +33,9 @@ export default function HeroSection () {
                             </span>
                         </p>
                         <div className='pt-5'>
-                            <button className="rounded-xl py-2 px-4 cursor-pointer ctaButtons shadow-sm tracking-wide text-sm border">Download CV</button>
+                            <a href="/JohnElliott_CV.pdf" download>
+                                <button className="rounded-xl py-2 px-4 cursor-pointer ctaButtons shadow-sm tracking-wide text-sm border">Download CV</button>
+                            </a>
                         </div>
                     </div>                       
                 </div>

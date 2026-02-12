@@ -46,7 +46,9 @@ function GeneralInfo () {
                 </div>
                 <section className="flex-1 flex flex-col justify-center items-center gap-2">
                     <StackImageCard />
-                    <button className="rounded-xl py-2 px-4 cursor-pointer ctaButtons shadow-sm tracking-wide text-sm border">Download CV</button>
+                    <a href="/JohnElliott_CV.pdf" download>
+                        <button className="rounded-xl py-2 px-4 cursor-pointer ctaButtons shadow-sm tracking-wide text-sm border">Download CV</button>
+                    </a>
                 </section>
             </div>
         </div>
