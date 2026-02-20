@@ -32,7 +32,7 @@ import ProjectPage from "./ProjectPage"
 
                 }],
             images: [screenshot1, screenshot2, screenshot3, screenshot4],
-            links: {github: 'https://github.com/Jakelliott98/NH_compliance', site: ''}
+            links: {github: 'https://github.com/Jakelliott98/NH_compliance', site: 'https://comply-hub.netlify.app/'}
         }
 
 function ComplianceTracker () {
