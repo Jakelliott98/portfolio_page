@@ -29,8 +29,8 @@ export default function ProjectPage ({ project }) {
                     }
                 </div>
             </div>
-            <div className="bg-red-100 rounded h-auto">
-                <img src={project.images[1]} className="h-full w-full rounded"/>
+            <div className="bg-red-100 rounded-lg h-auto">
+                <img src={project.headerImg} className="h-full w-full rounded-lg"/>
             </div>
             <div className="flex flex-col gap-5">
                 <h2 className="subHeadings">Problem Overview</h2>
@@ -71,7 +71,7 @@ function KeyFeatures ({keyFeatures}) {
 
 function ProjectImages ({images}) {
 
-    const [image, setImage] = useState(2)
+    const [image, setImage] = useState(0)
 
     const counterDown = () => {
         setImage((prev) => {
@@ -95,8 +95,8 @@ function ProjectImages ({images}) {
 
     return (
         <div className="flex flex-col">
-            <div className="md:h-auto h-auto w-full flex">
-                <img className="w-full h-full rounded" src={images[image]}/>
+            <div className="md:h-auto h-auto w-full flex rounded-lg">
+                <img className="w-full h-full rounded-lg" src={images[image]}/>
             </div>
             <div className="w-full justify-center items-center flex gap-1 pt-5 [&>*]:cursor-pointer">
                 <FontAwesomeIcon icon={faArrowLeft} className={`text-slate-300 ${image === 0 && 'text-slate-800'}`} onClick={() => counterDown()}/>

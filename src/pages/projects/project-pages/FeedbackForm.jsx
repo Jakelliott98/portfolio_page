@@ -21,6 +21,7 @@ const feedbackForm = {
                 text: 'Allows sites to tailor their feedback forms by changing questions and managing clinician, ensuring site specific data.'
             }],
         images: [],
+        headerImg: '#',
         links: {github: 'https://github.com/Jakelliott98/NH_FeebackPortal', site: ''}
 }
 

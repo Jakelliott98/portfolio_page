@@ -1,8 +1,9 @@
 
-import screenshot1 from '../../../assets/project-screenshots/compliance-tracker/screenshot1.png'
-import screenshot2 from '../../../assets/project-screenshots/compliance-tracker/screenshot2.png'
-import screenshot3 from '../../../assets/project-screenshots/compliance-tracker/screenshot3.png'
-import screenshot4 from '../../../assets/project-screenshots/compliance-tracker/screenshot4.png'
+import Dashboard from '../../../assets/project-screenshots/compliance-tracker/Dashboard.png'
+import PathSelection from '../../../assets/project-screenshots/compliance-tracker/PathSelection.png'
+import SettingsPage from '../../../assets/project-screenshots/compliance-tracker/SettingsPage.png'
+import SiteFormPage from '../../../assets/project-screenshots/compliance-tracker/SiteFormPage.png'
+import SiteProfiles from '../../../assets/project-screenshots/compliance-tracker/SiteProfiles.png'
 import ProjectPage from "./ProjectPage"
 
     const complainceTracker = {
@@ -31,7 +32,8 @@ import ProjectPage from "./ProjectPage"
                     text: 'Easy to scan and immediately identify overdue sites, removing the need for manual checks.'
 
                 }],
-            images: [screenshot1, screenshot2, screenshot3, screenshot4],
+            images: [PathSelection, SiteFormPage, Dashboard, SiteProfiles, SettingsPage],
+            headerImg: SiteProfiles,
             links: {github: 'https://github.com/Jakelliott98/NH_compliance', site: 'https://comply-hub.netlify.app/'}
         }
 

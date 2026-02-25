@@ -26,10 +26,10 @@ function ProjectCard ({ project }) {
 
     return (
         <div onClick={() => navigate(project.route)} className="group flex-1 bg-slate-800 p-5 rounded-xl flex gap-4 border border-transparent hover:border-violet-800 hover:bg-slate-800/80 cursor-pointer transition-all duration-200">
-                    <div className='hidden md:block flex-1 bg-slate-600 rounded'>
-                        <img src="#"/>
+                    <div className='hidden md:block rounded-lg flex-2 overflow-hidden'>
+                        <img src={project.image} className="object-cover w-full h-full"/>
                     </div>
-                    <div className="flex-4 flex flex-col items-start gap-2 md:gap-0">
+                    <div className="flex flex-col items-start gap-2 md:gap-0 flex-4">
                         <h1 className="text-base md:text-xl font-bold group-hover:text-violet-400 flex items-center gap-3"> {project.title} <FontAwesomeIcon className="text-md text-transparent group-hover:text-violet-800 transition-all duration-200" icon={faUpRightFromSquare} /></h1>
                         <p className="text-sm md:text-base text-slate-400 pt-1 text-start flex-1">{project.description}</p>
                         <ul className="flex flex-wrap gap-2 pt-2">

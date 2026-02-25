@@ -18,6 +18,7 @@ const CalorieCalculatorObj = {
                 text: 'A type‑safe calculation engine that handles all metabolic formulas with strict, predictable TypeScript logic.'
             }],
         images: [],
+        headerImg: '#',
         links: {github: 'https://github.com/Jakelliott98/NH_WeightTracker', site: ''}
     }
 
