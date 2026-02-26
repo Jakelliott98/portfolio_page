@@ -27,7 +27,7 @@ const feedbackForm = {
             }],
         images: [ homePage, reports, commentsSection, settingPage, formScreenshot],
         headerImg: reports,
-        links: {github: 'https://github.com/Jakelliott98/NH_FeebackPortal', site: ''}
+        links: {github: 'https://github.com/Jakelliott98/NH_FeebackPortal', site: 'https://nh-feedbackportal.netlify.app/'}
 }
 
 function FeedbackForm () {
