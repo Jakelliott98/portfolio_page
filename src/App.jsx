@@ -1,4 +1,5 @@
 import './App.css'
+import ScrollToTop from './components/ui/ScrollToTop'
 import Homepage from './pages/Home'
 import CalorieCalculator from './pages/projects/project-pages/CalorieCalculator'
 import ComplianceTracker from './pages/projects/project-pages/ComplianceTracker'
@@ -8,12 +9,15 @@ import { Routes, Route } from 'react-router'
 function App() {
 
 return (
-  <Routes>
-    <Route index element={<Homepage/>}/>
-    <Route path='feedbackForm' element={<FeedbackForm />}/>
-    <Route path='complainceTracker' element={<ComplianceTracker />}/>
-    <Route path='calorieCalculator' element={<CalorieCalculator />}/>
-  </Routes>
+  <>
+    <ScrollToTop />
+    <Routes>
+      <Route index element={<Homepage/>}/>
+      <Route path='feedbackForm' element={<FeedbackForm />}/>
+      <Route path='complainceTracker' element={<ComplianceTracker />}/>
+      <Route path='calorieCalculator' element={<CalorieCalculator />}/>
+    </Routes>
+  </>
 )
 }
 
