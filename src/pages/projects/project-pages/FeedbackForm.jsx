@@ -1,5 +1,9 @@
 import ProjectPage from "./ProjectPage"
 import formScreenshot from '../../../assets/project-screenshots/feedback-form/feedbackForm.png'
+import commentsSection from '../../../assets/project-screenshots/feedback-form/CommentsSection.png'
+import homePage from '../../../assets/project-screenshots/feedback-form/HomePage.png'
+import reports from '../../../assets/project-screenshots/feedback-form/Reports.png'
+import settingPage from '../../../assets/project-screenshots/feedback-form/Settings.png'
 
 const feedbackForm = {
         title: 'Feedback Form',
@@ -21,8 +25,8 @@ const feedbackForm = {
                 title: 'Configurable Questions & Clinician Management', 
                 text: 'Allows sites to tailor their feedback forms by changing questions and managing clinician, ensuring site specific data.'
             }],
-        images: [formScreenshot],
-        headerImg: '#',
+        images: [ homePage, reports, commentsSection, settingPage, formScreenshot],
+        headerImg: reports,
         links: {github: 'https://github.com/Jakelliott98/NH_FeebackPortal', site: ''}
 }
 

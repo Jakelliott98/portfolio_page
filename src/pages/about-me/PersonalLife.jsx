@@ -6,6 +6,7 @@ import monkey from '../../assets/nature-monkey.jpeg'
 import deepWork from '../../assets/reading.jpeg'
 import paddle from '../../assets/paddle.jpeg'
 import coding from '../../assets/coding.jpeg'
+import chess from '../../assets/chess.JPG'
 
 const personalInterests = [
     {
@@ -51,7 +52,7 @@ const personalInterests = [
     {
         title: 'Chess',
         text: 'I’ve recently taken up chess, enjoying the strategic thinking and long-term planning it develops.',
-        source: '',
+        source: chess,
     },
 ]
 

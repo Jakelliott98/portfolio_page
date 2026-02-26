@@ -1,5 +1,5 @@
 import ComplianceCover from '../../assets/project-screenshots/compliance-tracker/Dashboard.png'
-import FeedbackCover from '../../assets/project-screenshots/compliance-tracker/PathSelection.png'
+import FeedbackCover from '../../assets/project-screenshots/feedback-form/Reports.png'
 
 const projectList = [
     {
