@@ -8,7 +8,7 @@ export default function Projects () {
     return (
         <div className="md:min-h-screen text-slate-200 flex flex-col md:items-center md:px-5 md:p-10 mt-20 md:mt-0">
             <h1 className="sectionHeading text-center md:mb-5 pb-5 md:pb-0">Projects</h1>
-            <div className="flex-1 flex flex-col md:px-25 gap-5 py-2 md:py-10 w-full [&>*]:flex-grow">
+            <div className="flex-1 flex flex-col justify-center md:px-25 gap-5 py-2 md:py-10 w-full">
                 {
                     projectList.map(project => (
                         <ProjectCard project={project} />
@@ -25,8 +25,8 @@ function ProjectCard ({ project }) {
     const navigate= useNavigate()
 
     return (
-        <div onClick={() => navigate(project.route)} className="group flex-1 bg-slate-800 p-5 rounded-xl flex gap-4 border border-transparent hover:border-violet-800 hover:bg-slate-800/80 cursor-pointer transition-all duration-200">
-                    <div className='hidden md:block rounded-lg flex-2 overflow-hidden'>
+        <div onClick={() => navigate(project.route)} className="group bg-slate-800 p-5 rounded-xl flex gap-4 border border-transparent hover:border-violet-800 hover:bg-slate-800/80 cursor-pointer transition-all duration-200">
+                    <div className='hidden md:block rounded-lg h-40 overflow-hidden'>
                         <img src={project.image} className="object-cover w-full h-full"/>
                     </div>
                     <div className="flex flex-col items-start gap-2 md:gap-0 flex-4">

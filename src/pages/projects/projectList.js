@@ -1,4 +1,5 @@
 import ComplianceCover from '../../assets/project-screenshots/compliance-tracker/Dashboard.png'
+import FeedbackCover from '../../assets/project-screenshots/compliance-tracker/PathSelection.png'
 
 const projectList = [
     {
@@ -6,7 +7,7 @@ const projectList = [
         description: 'An end‑to‑end system that collects and organises client feedback through a simple form, storing responses in Supabase and presenting them in an authenticated, centralised portal for quick, meaningful analysis.',
         languages: ['JavaScript', 'React', 'HTML', 'CSS', 'Supabase', 'Clerk', 'React Router'],
         route: 'feedbackForm',
-        image: '#',
+        image: FeedbackCover,
     },
     {
         title: 'Compliance Tracker',
