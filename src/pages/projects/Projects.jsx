@@ -26,7 +26,7 @@ function ProjectCard ({ project }) {
 
     return (
         <div onClick={() => navigate(project.route)} className="group bg-slate-800 p-5 rounded-xl flex gap-4 border border-transparent hover:border-violet-800 hover:bg-slate-800/80 cursor-pointer transition-all duration-200">
-                    <div className='hidden md:block rounded-lg h-40 overflow-hidden'>
+                    <div className='hidden md:block rounded-lg h-40 max-w-75 overflow-hidden'>
                         <img src={project.image} className="object-cover w-full h-full"/>
                     </div>
                     <div className="flex flex-col items-start gap-2 md:gap-0 flex-4">
